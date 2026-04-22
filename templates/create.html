@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>Nueva Cita</h3>
+
+<form action="/save" method="post">
+
+    <input type="text" name="mascota" class="form-control mb-2"
+           placeholder="Nombre de la mascota" required>
+
+    <input type="text" name="propietario" class="form-control mb-2"
+           placeholder="Nombre del propietario" required>
+
+    <input type="text" name="especie" class="form-control mb-2"
+           placeholder="Ej: Perro, Gato" required>
+
+    <input type="date" name="fecha" class="form-control mb-3" required>
+
+    <button class="btn btn-primary">Guardar</button>
+
+</form>
+
+{% endblock %}
